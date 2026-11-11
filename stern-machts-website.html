@@ -1,0 +1,3703 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Primary Meta Tags -->
+  <title>Stern macht's | Landscaping, Tree Care & Excavation in Graz</title>
+  <meta name="description" content="Stern macht's in Graz â€“ Your partner for excavation work, tree services, wood chipping, and garden renovation. Contact us for your property project.">
+  <meta name="keywords" content="Landscaping Graz, Garden Construction Graz, Excavation Graz, Tree Removal Graz, Tree Relocation Graz, Garden Renovation Graz, Earthworks Graz, Stern machts">
+  <meta name="author" content="Stern macht's">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Stern macht's">
+  <meta property="og:title" content="Stern macht's | Landscaping & Excavation in Graz">
+  <meta property="og:description" content="From excavation work and tree care to garden renovation â€“ Stern macht's in Graz takes action and finds practical solutions for your property.">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:url" content="https://sternmachts.at">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stern macht's | Landscaping & Excavation in Graz">
+  <meta name="twitter:description" content="Your reliable partner for excavation, tree care, and garden renovation in Graz, Austria.">
+  <meta name="twitter:image" content="images/hero.jpg">
+
+  <!-- Favicon / Brand Touch -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23173F32'><path d='M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z'/></svg>">
+
+  <!-- Google Fonts: DM Serif Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <style>
+/* ==========================================================================
+   Stern macht's â€” Premium Landscaping & Garden Construction (Graz)
+   Design System & Stylesheet
+   ========================================================================== */
+
+/* --- Custom Properties & Design Tokens --- */
+:root {
+  /* Color Palette */
+  --color-primary: #173F32;       /* Forest Green */
+  --color-primary-dark: #0f2c23;  /* Deep Forest */
+  --color-primary-light: #235444; /* Medium Forest */
+  --color-secondary: #64866A;     /* Natural Green */
+  --color-secondary-light: #8da992;
+  --color-secondary-soft: #eaf0eb;
+  --color-bg: #F4F2E9;            /* Warm Beige */
+  --color-bg-alt: #FFFFFF;        /* Crisp White */
+  --color-bg-card: #FFFFFF;
+  --color-text: #252B27;          /* Dark Charcoal */
+  --color-text-muted: #576159;    /* Muted Slate Green */
+  --color-text-light: #8a968d;
+  --color-border: #E2DFD2;
+  --color-border-focus: #64866A;
+  
+  /* Accent & Status */
+  --color-accent: #C9A86A;        /* Subtle Earth Gold (stars/accents) */
+  --color-success: #2e7d32;
+  --color-error: #c62828;
+
+  /* Typography */
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Sizing & Spacing */
+  --container-max: 1240px;
+  --container-narrow: 880px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Elevations */
+  --shadow-sm: 0 2px 8px rgba(23, 63, 50, 0.05);
+  --shadow-md: 0 6px 20px rgba(23, 63, 50, 0.08);
+  --shadow-lg: 0 16px 36px rgba(23, 63, 50, 0.12);
+  --shadow-hover: 0 20px 40px rgba(23, 63, 50, 0.16);
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Header Height */
+  --header-height: 80px;
+}
+
+/* --- Base & Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + 16px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Layout Containers --- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section {
+  padding: 5.5rem 0;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 7.5rem 0;
+  }
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}
+
+.section-dark {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark p {
+  color: #FFFFFF;
+}
+
+/* --- Section Headers --- */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.section-header.text-left {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.85rem;
+}
+
+.eyebrow-dark {
+  color: var(--color-secondary-light);
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.section-dark .section-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.85rem 1.85rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(23, 63, 50, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+  border-color: #FFFFFF;
+}
+
+.btn-light:hover {
+  background-color: var(--color-bg);
+  border-color: var(--color-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-outline-light:hover {
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+  border-color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-sm {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.88rem;
+}
+
+.btn-icon-svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.btn:hover .btn-icon-svg {
+  transform: translateX(3px);
+}
+
+/* --- Sticky Navigation Bar --- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: rgba(244, 242, 233, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(226, 223, 210, 0.7);
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), height var(--transition-fast);
+}
+
+.site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 4px 20px rgba(23, 63, 50, 0.08);
+  height: 72px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Brand Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.logo-tagline {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+/* Desktop Nav Menu */
+.nav-menu {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+  }
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.96rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transition: width var(--transition-fast);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-cta {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-cta {
+    display: inline-flex;
+  }
+}
+
+/* Hamburger Toggle */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1010;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.menu-toggle:hover {
+  background-color: rgba(23, 63, 50, 0.05);
+}
+
+.menu-toggle-bar {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.menu-toggle[aria-expanded="true"] .bar-1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .bar-2 {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .bar-3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Mobile Navigation Drawer */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  max-width: 380px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+  z-index: 1005;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem 2.5rem 2rem;
+  transition: right var(--transition-normal);
+  overflow-y: auto;
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(23, 63, 50, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1002;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.mobile-nav-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.mobile-nav-link {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  display: block;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--color-bg);
+}
+
+.mobile-nav-info {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+.mobile-nav-info strong {
+  display: block;
+  color: var(--color-primary);
+  margin-bottom: 0.35rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--header-height) + 3rem);
+  padding-bottom: 5rem;
+  color: #FFFFFF;
+  background-color: var(--color-primary-dark);
+  overflow: hidden;
+}
+
+.hero-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  transform: scale(1.02);
+  transition: transform 8s ease-out;
+}
+
+.hero:hover .hero-bg-img {
+  transform: scale(1.06);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 44, 35, 0.92) 0%,
+    rgba(23, 63, 50, 0.82) 45%,
+    rgba(23, 63, 50, 0.65) 100%
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 820px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #D6E4D9;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+}
+
+.hero-title {
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.hero-lead {
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 2.25rem;
+  max-width: 680px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1.35rem;
+  background: rgba(15, 44, 35, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(8px);
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.hero-trust-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-secondary-light);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* --- Split Overview Section --- */
+.split-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .split-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4.5rem;
+  }
+}
+
+.overview-collage {
+  position: relative;
+  padding-bottom: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.overview-main-img-box {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 440px;
+}
+
+.overview-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.overview-collage:hover .overview-main-img {
+  transform: scale(1.04);
+}
+
+.overview-floating-img-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 52%;
+  height: 220px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 16px 32px rgba(23, 63, 50, 0.22);
+  z-index: 2;
+  transition: transform var(--transition-normal);
+}
+
+.overview-collage:hover .overview-floating-img-box {
+  transform: translateY(-4px);
+}
+
+.overview-floating-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overview-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: rgba(23, 63, 50, 0.94);
+  color: #FFFFFF;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+  max-width: 210px;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 3;
+}
+
+.overview-badge strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: #FFFFFF;
+  margin-bottom: 0.15rem;
+}
+
+.overview-content h2 {
+  margin-bottom: 1.25rem;
+}
+
+.overview-content p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Feature Image Cards in About */
+.about-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.75rem 0 2.25rem 0;
+}
+
+.about-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.75rem 1rem;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.about-feature-card:hover {
+  transform: translateX(4px);
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-feature-thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.about-feature-text strong {
+  display: block;
+  font-size: 0.98rem;
+  color: var(--color-primary);
+  margin-bottom: 0.15rem;
+}
+
+.about-feature-text span {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  display: block;
+}
+
+/* --- Services Section --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Highlight first 2 cards or adjust row layout */
+  .service-card:nth-child(4) {
+    grid-column: span 1;
+  }
+  .service-card:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .service-card:nth-child(4) {
+    grid-column: auto;
+  }
+  .service-card:nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+.service-card {
+  background-color: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-secondary);
+}
+
+.service-img-wrapper {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background-color: #e6e3d7;
+}
+
+.service-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.08);
+}
+
+.service-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(23, 63, 50, 0.88);
+  color: #FFFFFF;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.service-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-title {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+}
+
+.service-desc {
+  font-size: 0.98rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: auto;
+  transition: color var(--transition-fast), gap var(--transition-fast);
+}
+
+.service-link:hover {
+  color: var(--color-secondary);
+  gap: 0.65rem;
+}
+
+/* Services Equipment Banner */
+.services-equipment-banner {
+  margin-top: 3.5rem;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 992px) {
+  .services-equipment-banner {
+    grid-template-columns: 1fr 1.2fr;
+  }
+}
+
+.equipment-banner-img-box {
+  position: relative;
+  min-height: 280px;
+}
+
+.equipment-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.equipment-banner-content {
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.equipment-banner-content h3 {
+  color: #FFFFFF;
+  font-size: 1.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.equipment-banner-content p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+/* --- Why Choose Us Section --- */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 1.75rem;
+  transition: background var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.why-card:hover {
+  background: rgba(255, 255, 255, 0.11);
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.why-icon-box {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+
+.why-icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.why-title {
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.why-desc {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.96rem;
+  line-height: 1.62;
+}
+
+/* --- Projects / Portfolio Section --- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 340px;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  background-color: #252b27;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow), opacity var(--transition-fast);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 44, 35, 0.95) 0%,
+    rgba(23, 63, 50, 0.4) 60%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.75rem;
+  color: #FFFFFF;
+  transition: background var(--transition-fast);
+}
+
+.project-card:hover .project-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(15, 44, 35, 0.98) 0%,
+    rgba(23, 63, 50, 0.6) 70%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+.project-category {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-secondary-light);
+  margin-bottom: 0.35rem;
+}
+
+.project-title {
+  color: #FFFFFF;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+
+.project-location {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.project-zoom-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: all var(--transition-fast);
+}
+
+.project-card:hover .project-zoom-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.portfolio-disclaimer {
+  margin-top: 2.5rem;
+  padding: 1rem 1.5rem;
+  background-color: rgba(226, 223, 210, 0.5);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 3px solid var(--color-secondary);
+}
+
+/* --- Customer Reviews Section --- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.review-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.review-img-box {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  background-color: #252b27;
+}
+
+.review-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.review-card:hover .review-img {
+  transform: scale(1.06);
+}
+
+.review-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(23, 63, 50, 0.88);
+  color: #FFFFFF;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.review-body {
+  padding: 1.75rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.review-quote-mark {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--color-border);
+  user-select: none;
+}
+
+.review-stars {
+  display: flex;
+  gap: 0.25rem;
+  color: var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.star-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.review-quote {
+  font-size: 1.02rem;
+  line-height: 1.68;
+  color: var(--color-text);
+  font-style: italic;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.review-avatar-placeholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-secondary-soft);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.review-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-author-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.review-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+/* --- FAQ Split Layout --- */
+.faq-split-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .faq-split-grid {
+    grid-template-columns: 1fr 1.4fr;
+    gap: 3.5rem;
+  }
+}
+
+.faq-visual-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 100px;
+}
+
+.faq-visual-img-box {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.faq-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq-visual-body {
+  padding: 1.75rem;
+}
+
+.faq-visual-body h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.65rem;
+}
+
+.faq-visual-body p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+/* Contact Visual Banner */
+.contact-visual-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  height: 160px;
+  position: relative;
+}
+
+.contact-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(23, 63, 50, 0.9) 0%, rgba(23, 63, 50, 0.2) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  color: #FFFFFF;
+}
+
+.contact-visual-overlay strong {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  display: block;
+}
+
+.contact-visual-overlay span {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- FAQ Accordion Section --- */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.faq-item.active {
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-question-btn {
+  width: 100%;
+  padding: 1.35rem 1.75rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+.faq-question-btn:hover {
+  color: var(--color-secondary);
+}
+
+.faq-toggle-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.faq-item.active .faq-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-normal) ease-out;
+}
+
+.faq-answer-inner {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.faq-answer-inner p {
+  margin-bottom: 0.85rem;
+}
+
+.faq-answer-inner p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Final CTA Banner Section --- */
+.cta-banner {
+  position: relative;
+  background-color: var(--color-primary-dark);
+  padding: 6.5rem 0;
+  overflow: hidden;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.cta-bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cta-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 44, 35, 0.94) 0%,
+    rgba(23, 63, 50, 0.9) 100%
+  );
+  z-index: 2;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 3;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+}
+
+.cta-desc {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+/* --- Contact Section --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+}
+
+@media (min-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1.05fr 1.35fr;
+    gap: 4rem;
+  }
+}
+
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.75rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-secondary-soft);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.contact-detail h4 {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.contact-detail p,
+.contact-detail a {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.contact-detail a.phone-link {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: color var(--transition-fast);
+}
+
+.contact-detail a.phone-link:hover {
+  color: var(--color-secondary);
+}
+
+/* Map Embed */
+.map-container {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  height: 250px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Contact Form */
+.contact-form-box {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h3 {
+  margin-bottom: 0.4rem;
+}
+
+.form-header p {
+  color: var(--color-text-muted);
+  font-size: 0.96rem;
+}
+
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
+@media (min-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.45rem;
+}
+
+.form-label .required {
+  color: var(--color-error);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-border-focus);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(100, 134, 106, 0.2);
+}
+
+.form-input.is-invalid,
+.form-select.is-invalid,
+.form-textarea.is-invalid {
+  border-color: var(--color-error);
+  background-color: #fff9f9;
+}
+
+.form-error-msg {
+  display: none;
+  color: var(--color-error);
+  font-size: 0.82rem;
+  margin-top: 0.35rem;
+  font-weight: 500;
+}
+
+.is-invalid + .form-error-msg {
+  display: block;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-note {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Form Success & Feedback Notice */
+.form-status-alert {
+  display: none;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.form-status-alert.is-success {
+  display: block;
+  background-color: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  color: #1b5e20;
+}
+
+.form-status-alert.is-error {
+  display: block;
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  color: #b71c1c;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background-color: var(--color-primary-dark);
+  color: #FFFFFF;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 3rem;
+  }
+}
+
+.footer-col h4 {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+.footer-about .logo-text {
+  color: #FFFFFF;
+}
+
+.footer-about .logo-tagline {
+  color: var(--color-secondary-light);
+}
+
+.footer-about p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin-top: 1.25rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.94rem;
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.94rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.footer-contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-contact-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--color-secondary-light);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.88rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal-link {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  transition: color var(--transition-fast);
+}
+
+.footer-legal-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* --- Modals (Legal & Lightbox) --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 44, 35, 0.82);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: #FFFFFF;
+  border-radius: var(--radius-md);
+  max-width: 720px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+  transform: translateY(20px);
+  transition: transform var(--transition-normal);
+}
+
+.modal-overlay.open .modal-content {
+  transform: translateY(0);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: background var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  background: var(--color-border);
+}
+
+.modal-body h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.modal-body p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 25, 20, 0.94);
+  z-index: 2500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-normal), visibility var(--transition-normal);
+}
+
+.lightbox-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-img-wrapper {
+  max-width: 90vw;
+  max-height: 80vh;
+  position: relative;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-caption {
+  margin-top: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: var(--font-serif);
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: background var(--transition-fast);
+}
+
+.lightbox-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* --- Accessibility & Utility --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+</style>
+
+  <!-- Schema.org Structured Data: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Stern macht's",
+    "image": "images/hero.jpg",
+    "telephone": "+436649605052",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ThaddÃ¤us-Stammel-StraÃŸe 51",
+      "addressLocality": "Graz",
+      "postalCode": "8052",
+      "addressCountry": "AT"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.0543,
+      "longitude": 15.3941
+    },
+    "url": "https://sternmachts.at",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Graz, Styria, Austria"
+    },
+    "priceRange": "$$",
+    "description": "Stern macht's â€“ Professional excavation work, tree services, wood chipping, fence foundations, and garden renovation in Graz, Austria.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Landscaping and Excavation Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Excavation Work"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tree Care & Removal"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tree Relocation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wood Chipping"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Garden Renovation"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Fence Foundation Excavation"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==================== Header & Sticky Navigation ==================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      
+      <!-- Logo -->
+      <a href="#hero" class="logo" aria-label="Stern macht's Homepage">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
+        </svg>
+        <div>
+          <span class="logo-text">STERN MACHT'S</span>
+          <span class="logo-tagline">Landscaping &amp; Excavation â€¢ Graz</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#ueber-uns" class="nav-link">About Us</a></li>
+          <li><a href="#leistungen" class="nav-link">Services</a></li>
+          <li><a href="#vorteile" class="nav-link">Why Us</a></li>
+          <li><a href="#projekte" class="nav-link">Projects</a></li>
+          <li><a href="#bewertungen" class="nav-link">Reviews</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#kontakt" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Menu Toggle -->
+      <div class="nav-actions">
+        <a href="#kontakt" class="btn btn-primary btn-sm nav-cta">Request a Free Quote</a>
+        
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="menu-toggle-bar bar-1"></span>
+          <span class="menu-toggle-bar bar-2"></span>
+          <span class="menu-toggle-bar bar-3"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+      <li><a href="#ueber-uns" class="mobile-nav-link">About Us</a></li>
+      <li><a href="#leistungen" class="mobile-nav-link">Services</a></li>
+      <li><a href="#vorteile" class="mobile-nav-link">Why Stern macht's?</a></li>
+      <li><a href="#projekte" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#bewertungen" class="mobile-nav-link">Reviews</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      <li><a href="#kontakt" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
+    <a href="#kontakt" class="btn btn-primary" style="width: 100%; margin-bottom: 1.5rem;">Request a Free Quote</a>
+
+    <div class="mobile-nav-info">
+      <strong>Stern macht's</strong>
+      ThaddÃ¤us-Stammel-StraÃŸe 51<br>
+      8052 Graz, Austria<br><br>
+      <a href="tel:+436649605052" style="color: var(--color-primary); font-weight: 700;">+43 664 9605052</a>
+    </div>
+  </aside>
+
+  <!-- ==================== Main Content ==================== -->
+  <main id="main-content">
+
+    <!-- 1. Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-bg-wrapper">
+        <img 
+          src="images/hero.jpg" 
+          alt="Well-maintained spacious garden with natural stone paths and vibrant lawn in Graz" 
+          class="hero-bg-img"
+          loading="eager"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          YOUR PARTNER FOR GARDEN &amp; OUTDOOR FACILITIES IN GRAZ
+        </div>
+
+        <h1 class="hero-title" id="hero-title">We make more of your garden.</h1>
+
+        <p class="hero-lead">
+          From excavation work and tree care to garden renovation â€“ Stern macht's! We take action and find practical solutions for your property.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#kontakt" class="btn btn-light">
+            Request a Quote Now
+            <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#leistungen" class="btn btn-outline-light">Discover Our Services</a>
+        </div>
+
+        <div class="hero-trust">
+          <span>Personal</span>
+          <span class="hero-trust-dot"></span>
+          <span>Reliable</span>
+          <span class="hero-trust-dot"></span>
+          <span>Solution-Oriented</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Business Overview (About Us) -->
+    <section class="section section-alt" id="ueber-uns" aria-labelledby="overview-heading">
+      <div class="container">
+        <div class="split-grid">
+          
+          <!-- Image Collage Column -->
+          <div class="overview-collage">
+            <div class="overview-badge">
+              <strong>Graz &amp; Surroundings</strong>
+              Practical solutions for your property &amp; outdoor space
+            </div>
+            
+            <!-- Main Large Photo -->
+            <div class="overview-main-img-box">
+              <img 
+                src="images/about-main.jpg" 
+                alt="Earthworks, soil leveling, and landscaping work on a property" 
+                class="overview-main-img"
+                loading="lazy"
+              >
+            </div>
+
+            <!-- Overlapping Secondary Equipment Photo -->
+            <div class="overview-floating-img-box">
+              <img 
+                src="images/about-secondary.jpg" 
+                alt="Compact excavator and machinery at work on a garden construction site" 
+                class="overview-floating-img"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <!-- Text Column with Visual Feature Cards -->
+          <div class="overview-content">
+            <span class="eyebrow">ABOUT STERN MACHT'S</span>
+            <h2 id="overview-heading">We turn your property into something special.</h2>
+            
+            <p>
+              Whether garden renovation, earthworks, or tree services â€“ at Stern macht's, practical solutions and clean execution take center stage. We support you in designing and transforming your outdoor space.
+            </p>
+
+            <!-- Visual Feature Cards with Image Thumbnails -->
+            <div class="about-features-grid">
+              
+              <div class="about-feature-card">
+                <img src="images/service-excavation.jpg" alt="Excavation and ground preparation" class="about-feature-thumb">
+                <div class="about-feature-text">
+                  <strong>Precise Excavation Work</strong>
+                  <span>Ground modeling, trenching, and foundation excavation for residential properties</span>
+                </div>
+              </div>
+
+              <div class="about-feature-card">
+                <img src="images/service-tree.jpg" alt="Tree services and relocation" class="about-feature-thumb">
+                <div class="about-feature-text">
+                  <strong>Professional Tree Services</strong>
+                  <span>Safe tree removal, precise branch pruning, and careful tree relocation</span>
+                </div>
+              </div>
+
+              <div class="about-feature-card">
+                <img src="images/about-detail.jpg" alt="Garden renovation and stone work" class="about-feature-thumb">
+                <div class="about-feature-text">
+                  <strong>Garden Renovation &amp; Wood Chipping</strong>
+                  <span>Rejuvenating existing gardens, stone work, and efficient wood chipping</span>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="#leistungen" class="btn btn-primary">
+              More About Our Work
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section class="section" id="leistungen" aria-labelledby="services-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">ALL-IN-ONE EXPERTISE</span>
+          <h2 id="services-heading">Our Services</h2>
+          <p class="section-subtitle">The right support for your property and your garden.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Card 1: Excavation Work -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img 
+                src="images/service-excavation.jpg" 
+                alt="Compact excavator at work doing precise earthworks in a garden" 
+                class="service-img"
+                loading="lazy"
+              >
+              <span class="service-tag">Earthworks</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Excavation Work</h3>
+              <p class="service-desc">
+                Precise earthworks for your property â€“ for example, for garden projects and foundations.
+              </p>
+              <a href="#kontakt" class="service-link" data-service-inquiry="Excavation Work">
+                <span>Inquire about service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Tree Services -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img 
+                src="images/service-tree.jpg" 
+                alt="Tree services, felling, and tree care in a garden" 
+                class="service-img"
+                loading="lazy"
+              >
+              <span class="service-tag">Tree Care</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Tree Services</h3>
+              <p class="service-desc">
+                We support you in removing, cutting, and relocating trees.
+              </p>
+              <a href="#kontakt" class="service-link" data-service-inquiry="Tree Services">
+                <span>Inquire about service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Wood Chipping -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img 
+                src="images/service-chipping.jpg" 
+                alt="Wood chipping and clean shredding of branches and garden cuttings" 
+                class="service-img"
+                loading="lazy"
+              >
+              <span class="service-tag">Processing</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Wood Chipping</h3>
+              <p class="service-desc">
+                Accumulated cuttings are processed efficiently with a wood chipper.
+              </p>
+              <a href="#kontakt" class="service-link" data-service-inquiry="Wood Chipping">
+                <span>Inquire about service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4: Garden Renovation -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img 
+                src="images/service-renovation.jpg" 
+                alt="Newly renovated residential garden with fresh planting and lawn" 
+                class="service-img"
+                loading="lazy"
+              >
+              <span class="service-tag">Restoration</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Garden Renovation</h3>
+              <p class="service-desc">
+                We help redesign and upgrade existing gardens.
+              </p>
+              <a href="#kontakt" class="service-link" data-service-inquiry="Garden Renovation">
+                <span>Inquire about service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 5: Foundation Excavation -->
+          <article class="service-card">
+            <div class="service-img-wrapper">
+              <img 
+                src="images/service-foundation.jpg" 
+                alt="Excavation and ground preparation for fence foundations" 
+                class="service-img"
+                loading="lazy"
+              >
+              <span class="service-tag">Preparation</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Foundation Excavation</h3>
+              <p class="service-desc">
+                Preparatory earthworks for fence foundations and other property projects.
+              </p>
+              <a href="#kontakt" class="service-link" data-service-inquiry="Foundation Excavation">
+                <span>Inquire about service</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Machinery & Equipment Showcase Banner -->
+        <div class="services-equipment-banner">
+          <div class="equipment-banner-img-box">
+            <img 
+              src="images/why-equipment.jpg" 
+              alt="Professional machinery and excavators in Graz" 
+              class="equipment-banner-img" 
+              loading="lazy"
+            >
+          </div>
+          <div class="equipment-banner-content">
+            <span class="eyebrow eyebrow-dark">MACHINERY &amp; EQUIPMENT</span>
+            <h3>Specialized Machinery for Every Property</h3>
+            <p>
+              With agile compact excavators, wood chippers, and professional equipment, we tackle narrow driveways, steep terrain, and demanding garden properties in Graz and the surrounding area.
+            </p>
+            <div>
+              <a href="#kontakt" class="btn btn-light">Request a Free Project Quote</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Why Choose Us Section -->
+    <section class="section section-dark" id="vorteile" aria-labelledby="why-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow eyebrow-dark">OUR COMMITMENT</span>
+          <h2 id="why-heading">Why Stern macht's?</h2>
+          <p class="section-subtitle">
+            Reliable craftsmanship with common sense and the right equipment for your project.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          
+          <!-- Quality 1 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg class="why-icon" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Individual Solutions</h3>
+            <p class="why-desc">
+              We look for a solution even when original plans cannot be implemented.
+            </p>
+          </div>
+
+          <!-- Quality 2 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg class="why-icon" viewBox="0 0 24 24">
+                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Practical Execution</h3>
+            <p class="why-desc">
+              With suitable machinery and tools, we tackle your projects head-on.
+            </p>
+          </div>
+
+          <!-- Quality 3 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg class="why-icon" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Clean Work</h3>
+            <p class="why-desc">
+              A careful and tidy execution stands at the core of everything we do.
+            </p>
+          </div>
+
+          <!-- Quality 4 -->
+          <div class="why-card">
+            <div class="why-icon-box" aria-hidden="true">
+              <svg class="why-icon" viewBox="0 0 24 24">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 3s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+              </svg>
+            </div>
+            <h3 class="why-title">Personal Contact</h3>
+            <p class="why-desc">
+              Direct communication and individual consultation for your project.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Projects / Portfolio Section -->
+    <section class="section section-alt" id="projekte" aria-labelledby="portfolio-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">PORTFOLIO &amp; CRAFTSMANSHIP</span>
+          <h2 id="portfolio-heading">Insights Into Our Work</h2>
+          <p class="section-subtitle">Every property is different. Every task deserves the right solution.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Item 1: Garden Renovation -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Garden Renovation">
+            <img 
+              src="images/project-1.jpg" 
+              alt="Redesigned garden with structured planting and lawn area" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Garden Renovation</span>
+              <h3 class="project-title">Residential Garden Upgrade</h3>
+              <span class="project-location">Graz Surroundings</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Excavation Work -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Excavation Work">
+            <img 
+              src="images/project-2.jpg" 
+              alt="Precise excavation work and earth moving on a property" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Excavation Work</span>
+              <h3 class="project-title">Earthworks for Driveway &amp; Entrance</h3>
+              <span class="project-location">Graz</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Tree Removal -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Tree Removal">
+            <img 
+              src="images/project-3.jpg" 
+              alt="Tree removal and clean cutting on a building plot" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Tree Services</span>
+              <h3 class="project-title">Tree Removal &amp; Disposal</h3>
+              <span class="project-location">Building Plot Graz</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Tree Relocation -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Tree Relocation">
+            <img 
+              src="images/project-4.jpg" 
+              alt="Careful relocation and replanting of an existing tree" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Tree Relocation</span>
+              <h3 class="project-title">Preserve Instead of Fell: Relocating Trees</h3>
+              <span class="project-location">Graz</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Property Preparation -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Garden Transformation">
+            <img 
+              src="images/project-5.jpg" 
+              alt="Comprehensive grading and property preparation" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Garden Transformation</span>
+              <h3 class="project-title">Ground Modeling &amp; Site Preparation</h3>
+              <span class="project-location">Styria</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Fence Foundations -->
+          <div class="project-card" tabindex="0" role="button" aria-label="View project: Foundation Work">
+            <img 
+              src="images/project-6.jpg" 
+              alt="Trench excavation for property fence foundation" 
+              class="project-img"
+              loading="lazy"
+            >
+            <div class="project-zoom-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <div class="project-overlay">
+              <span class="project-category">Foundation Excavation</span>
+              <h3 class="project-title">Excavation for Fence Foundation</h3>
+              <span class="project-location">Graz</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="portfolio-disclaimer">
+          <strong>Note:</strong> The photographs shown serve as illustrative visual examples of landscaping work and will be replaced with genuine company photos as projects progress.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Customer Reviews Section (with Project Images) -->
+    <section class="section" id="bewertungen" aria-labelledby="reviews-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">PRACTICAL EXPERIENCES</span>
+          <h2 id="reviews-heading">What Our Customers Say</h2>
+          <p class="section-subtitle">Real feedback from clients we have had the pleasure of assisting in Graz.</p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <!-- Review 1 -->
+          <article class="review-card">
+            <div class="review-img-box">
+              <img src="images/review-1.jpg" alt="Building plot tree removal and excavation project" class="review-img" loading="lazy">
+              <span class="review-tag">Building Plot Graz</span>
+            </div>
+            <div class="review-body">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-quote">
+                â€œWe had to remove some trees and a fence foundation from our building plot. Benedikt arrived with an excavator, saw, wood chipper, and a great attitude. Some trees were relocated, while the others were processed into firewood and wood chips.â€
+              </p>
+              <div class="review-footer">
+                <div class="review-avatar-placeholder" aria-hidden="true">B</div>
+                <div class="review-author-info">
+                  <span class="review-author-title">Customer Review</span>
+                  <span class="review-verified-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    Building Plot / Tree Services
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card">
+            <div class="review-img-box">
+              <img src="images/review-2.jpg" alt="Excavator at garden entrance" class="review-img" loading="lazy">
+              <span class="review-tag">Garden Entrance</span>
+            </div>
+            <div class="review-body">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-quote">
+                â€œWe initially contacted Stern macht's for excavation work near our garden entrance. When our original vision could not be implemented, Mr. Stern came up with a fantastic alternative solution.â€
+              </p>
+              <div class="review-footer">
+                <div class="review-avatar-placeholder" aria-hidden="true">E</div>
+                <div class="review-author-info">
+                  <span class="review-author-title">Customer Review</span>
+                  <span class="review-verified-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    Excavation / Garden Entrance
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card">
+            <div class="review-img-box">
+              <img src="images/review-3.jpg" alt="Completed garden renovation in Graz" class="review-img" loading="lazy">
+              <span class="review-tag">Garden Renovation Graz</span>
+            </div>
+            <div class="review-body">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <p class="review-quote">
+                â€œThe garden renovation was completed quickly, precisely, very cleanly, and exactly as requested.â€
+              </p>
+              <div class="review-footer">
+                <div class="review-avatar-placeholder" aria-hidden="true">G</div>
+                <div class="review-author-info">
+                  <span class="review-author-title">Customer Review</span>
+                  <span class="review-verified-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    Garden Renovation Graz
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. FAQ Section (Split Visual Layout) -->
+    <section class="section section-alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">COMMON QUESTIONS</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear answers to key questions regarding our services and process.</p>
+        </div>
+
+        <div class="faq-split-grid">
+          
+          <!-- Left Visual Consultation Card -->
+          <div class="faq-visual-card">
+            <div class="faq-visual-img-box">
+              <img 
+                src="images/faq-consultation.jpg" 
+                alt="Personal garden consultation and project planning in Graz" 
+                class="faq-visual-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="faq-visual-body">
+              <span class="eyebrow">PERSONAL CONSULTATION</span>
+              <h3>Have Questions About Your Project?</h3>
+              <p>
+                Every property in Graz and the surrounding area has unique ground and access conditions. We are happy to advise you personally on site to find the best practical solution.
+              </p>
+              <a href="tel:+436649605052" class="btn btn-primary" style="width: 100%;">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                Call +43 664 9605052
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Accordion Column -->
+          <div class="faq-accordion">
+            
+            <!-- Question 1 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>What work does Stern macht's undertake?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Stern macht's handles excavation and earthworks, tree services (such as felling, pruning, and relocation), wood chipping of accumulated cuttings, fence foundation excavation, as well as comprehensive garden renovations and property preparation.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Does Stern macht's also offer excavation work?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. Precise excavation work for garden projects, foundation excavation, grading, and preparatory site work are core components of our offering.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Can trees also be relocated?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Yes. In addition to tree removal and cutting, we also support you with proper tree relocation on your property.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Is an on-site inspection possible?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    To get an accurate understanding of your project and local site conditions, please get in touch with us directly by phone or via our contact form. We are glad to coordinate next steps with you personally.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>How can I request a quote?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    You can reach us at any time by phone at <a href="tel:+436649605052" style="font-weight: 600; color: var(--color-primary); text-decoration: underline;">+43 664 9605052</a> or submit an inquiry using our online form below. Briefly describe your project, and we will follow up with you.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>In which area does Stern macht's operate?</span>
+                <svg class="faq-toggle-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  <p>
+                    Our workshop is based at ThaddÃ¤us-Stammel-StraÃŸe 51 in 8052 Graz, Austria. Please contact us directly to discuss whether we can carry out your project at your specific location.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. Final Call to Action Banner -->
+    <section class="cta-banner" aria-labelledby="cta-banner-heading">
+      <div class="cta-bg-wrapper">
+        <img 
+          src="images/contact-property.jpg" 
+          alt="Well-groomed landscaping and property" 
+          class="cta-bg-img"
+          loading="lazy"
+        >
+        <div class="cta-overlay"></div>
+      </div>
+
+      <div class="container cta-content">
+        <h2 class="cta-title" id="cta-banner-heading">Do You Have a Garden Project? Stern macht's!</h2>
+        <p class="cta-desc">
+          Tell us about your project plans. Together, we will find the right practical solution for your property.
+        </p>
+
+        <div class="cta-actions">
+          <a href="tel:+436649605052" class="btn btn-light">
+            <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            Call Us Directly
+          </a>
+          <a href="#kontakt" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section class="section" id="kontakt" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="eyebrow">DIRECT CONTACT</span>
+          <h2 id="contact-heading">Contact Us</h2>
+          <p class="section-subtitle">
+            Have questions about our services or want to request a free quote? We look forward to hearing about your project.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Information & Map -->
+          <div class="contact-info-panel">
+            
+            <!-- Visual Property Banner -->
+            <div class="contact-visual-card">
+              <img src="images/contact-property.jpg" alt="Landscaped residential property in Graz" class="contact-visual-img" loading="lazy">
+              <div class="contact-visual-overlay">
+                <strong>Stern macht's</strong>
+                <span>Your Local Landscaping Specialist in 8052 Graz</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              
+              <!-- Business Name -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg class="contact-icon" viewBox="0 0 24 24">
+                    <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>Business</h4>
+                  <p><strong>Stern macht's</strong><br>Landscaping &amp; Excavation</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg class="contact-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>Location</h4>
+                  <p>
+                    ThaddÃ¤us-Stammel-StraÃŸe 51<br>
+                    8052 Graz, Austria
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-icon-box" aria-hidden="true">
+                  <svg class="contact-icon" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
+                <div class="contact-detail">
+                  <h4>Phone Inquiries</h4>
+                  <p>
+                    <a href="tel:+436649605052" class="phone-link">+43 664 9605052</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-container" aria-label="Map showing business location in Graz">
+              <iframe 
+                title="Location Stern macht's in 8052 Graz"
+                src="https://maps.google.com/maps?q=Thadd%C3%A4us-Stammel-Stra%C3%9Fe+51,+8052+Graz,+Austria&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <div style="text-align: right;">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Thadd%C3%A4us-Stammel-Stra%C3%9Fe+51,+8052+Graz,+Austria" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+                style="width: 100%; justify-content: center;"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                Open in Google Maps
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Box -->
+          <div class="contact-form-box">
+            
+            <div class="form-header">
+              <h3>Send a Free Project Inquiry</h3>
+              <p>Tell us about your project requirements. We will get back to you promptly.</p>
+            </div>
+
+            <div id="form-status-alert" class="form-status-alert" role="alert"></div>
+
+            <form id="contact-form" novalidate>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Benedikt Wagner" required>
+                  <span class="form-error-msg">Please enter your full name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+                  <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number <span style="font-weight: 400; color: var(--color-text-muted);">(optional)</span></label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+43 ...">
+                </div>
+
+                <div class="form-group">
+                  <label for="service-type" class="form-label">Requested Service</label>
+                  <select id="service-type" name="service" class="form-select">
+                    <option value="General Garden Project">General Garden Project</option>
+                    <option value="Excavation Work">Excavation Work</option>
+                    <option value="Tree Services">Tree Services (Removal / Pruning / Relocation)</option>
+                    <option value="Wood Chipping">Wood Chipping</option>
+                    <option value="Garden Renovation">Garden Renovation</option>
+                    <option value="Foundation Excavation">Foundation Excavation / Fence Groundwork</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Project Details <span class="required">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Briefly describe your project (scope, property location, special requirements)..." required></textarea>
+                <span class="form-error-msg">Please provide a brief description of your project (min. 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Submit Inquiry Now
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              </button>
+
+              <p class="form-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: -2px; margin-right: 4px;" aria-hidden="true"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                Your personal details are treated with strict confidentiality and used solely to process your inquiry.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Col 1: About Brand -->
+        <div class="footer-col footer-about">
+          <a href="#hero" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor" style="color: #FFFFFF;" aria-hidden="true">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/>
+            </svg>
+            <div>
+              <span class="logo-text">STERN MACHT'S</span>
+              <span class="logo-tagline">Landscaping &amp; Excavation</span>
+            </div>
+          </a>
+          <p>
+            Your reliable partner in Graz for excavation work, tree services, wood chipping, and comprehensive garden renovations. Practical solutions for your property.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#ueber-uns" class="footer-link">About Us</a></li>
+            <li><a href="#leistungen" class="footer-link">Services</a></li>
+            <li><a href="#vorteile" class="footer-link">Why Stern macht's?</a></li>
+            <li><a href="#projekte" class="footer-link">Projects</a></li>
+            <li><a href="#bewertungen" class="footer-link">Customer Reviews</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#kontakt" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services Links -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Excavation Work">Excavation Work</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Tree Services">Tree Services</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Tree Services">Tree Removal &amp; Pruning</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Tree Services">Tree Relocation</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Wood Chipping">Wood Chipping</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Garden Renovation">Garden Renovation</a></li>
+            <li><a href="#leistungen" class="footer-link" data-service-inquiry="Foundation Excavation">Fence Foundations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Location -->
+        <div class="footer-col">
+          <h4>Graz Location</h4>
+          
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <div>
+              ThaddÃ¤us-Stammel-StraÃŸe 51<br>
+              8052 Graz, Austria
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <div>
+              <a href="tel:+436649605052" style="color: #FFFFFF; font-weight: 600;">+43 664 9605052</a><br>
+              <span style="font-size: 0.84rem; color: rgba(255, 255, 255, 0.65);">Personal Consultation</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <a href="#kontakt" class="btn btn-outline-light btn-sm" style="width: 100%; justify-content: center;">
+              Request a Quote
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Stern macht's. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <button class="footer-legal-link" data-modal-target="modal-impressum">Legal Notice</button>
+          <span>â€¢</span>
+          <button class="footer-legal-link" data-modal-target="modal-datenschutz">Privacy Policy</button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== Lightbox Modal ==================== -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Project Image Enlarged View">
+    <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close enlarged view">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="lightbox-img-wrapper">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ==================== Legal Modals (Austrian ECG & GDPR) ==================== -->
+  
+  <!-- Legal Notice Modal (Impressum) -->
+  <div class="modal-overlay" id="modal-impressum" role="dialog" aria-modal="true" aria-labelledby="impressum-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <h2 id="impressum-title" style="font-size: 1.8rem; margin-bottom: 1rem;">Legal Notice (Impressum)</h2>
+        <p><strong>Information pursuant to Â§ 5 of the Austrian E-Commerce Act (ECG) and disclosure requirements under Â§ 25 of the Austrian Media Act:</strong></p>
+        
+        <h3>Service Provider &amp; Media Owner</h3>
+        <p>
+          <strong>Stern macht's</strong><br>
+          ThaddÃ¤us-Stammel-StraÃŸe 51<br>
+          8052 Graz<br>
+          Austria
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Phone: <a href="tel:+436649605052" style="text-decoration: underline; color: var(--color-primary);">+43 664 9605052</a><br>
+          Location: Graz, Austria
+        </p>
+
+        <h3>Business Scope</h3>
+        <p>
+          Landscaping, garden construction, excavation work, tree services, wood chipping, and earthworks.
+        </p>
+
+        <h3>Online Dispute Resolution</h3>
+        <p>
+          Consumers have the option of submitting complaints to the EU Online Dispute Resolution platform: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">https://ec.europa.eu/consumers/odr</a>. You may also direct any complaints to the telephone number or contact address provided above.
+        </p>
+
+        <h3>Liability for Content</h3>
+        <p>
+          The contents of this website were created with the greatest possible care. However, we cannot assume any liability for the correctness, completeness, or topicality of the content.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Modal (DatenschutzerklÃ¤rung) -->
+  <div class="modal-overlay" id="modal-datenschutz" role="dialog" aria-modal="true" aria-labelledby="datenschutz-title">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body">
+        <h2 id="datenschutz-title" style="font-size: 1.8rem; margin-bottom: 1rem;">Privacy Policy</h2>
+        <p>We attach great importance to the protection of your personal data. We process your data exclusively on the basis of legal statutory provisions (GDPR, Austrian TKG 2003/2021).</p>
+
+        <h3>1. Contacting Us</h3>
+        <p>
+          If you contact us via the form on the website or by phone, the data you provide will be processed for the purpose of handling your inquiry and in the event of follow-up questions. We do not pass on this data without your consent.
+        </p>
+
+        <h3>2. Provision of the Website &amp; Server Logs</h3>
+        <p>
+          When accessing this website, the web server automatically records technical information (e.g. IP address, browser type, timestamp) to ensure error-free operation and security.
+        </p>
+
+        <h3>3. Your Rights</h3>
+        <p>
+          You are generally entitled to the rights of access, rectification, erasure, restriction of processing, data portability, revocation, and objection regarding your stored data. If you believe the processing of your data violates data protection laws, you can file a complaint with the competent supervisory authority (in Austria, the DatenschutzbehÃ¶rde).
+        </p>
+
+        <h3>4. Responsible Entity</h3>
+        <p>
+          Stern macht's<br>
+          ThaddÃ¤us-Stammel-StraÃŸe 51, 8052 Graz, Austria<br>
+          Phone: +43 664 9605052
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+/**
+ * Stern macht's â€” Premium Landscaping & Garden Construction (Graz)
+ * Main Interactive Script (English Edition)
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  // --- 1. Sticky Header & Active Navigation Highlighting ---
+  const header = document.querySelector('.site-header');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+
+  const handleScroll = () => {
+    // Header shadow on scroll
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+
+    // ScrollSpy active link
+    const scrollPos = window.scrollY + 120;
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  // --- 2. Mobile Navigation Drawer ---
+  const menuToggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  const mobileBackdrop = document.querySelector('.mobile-nav-backdrop');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  const openMobileNav = () => {
+    menuToggle.setAttribute('aria-expanded', 'true');
+    mobileNav.classList.add('open');
+    mobileBackdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMobileNav = () => {
+    menuToggle.setAttribute('aria-expanded', 'false');
+    mobileNav.classList.remove('open');
+    mobileBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+  }
+
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', closeMobileNav);
+  }
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMobileNav);
+  });
+
+  // --- 3. Service Card Click-to-Inquire Pre-selection ---
+  const serviceLinks = document.querySelectorAll('[data-service-inquiry]');
+  const serviceSelect = document.getElementById('service-type');
+
+  serviceLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const targetService = link.getAttribute('data-service-inquiry');
+      if (serviceSelect && targetService) {
+        serviceSelect.value = targetService;
+        serviceSelect.classList.add('is-highlighted');
+        setTimeout(() => {
+          serviceSelect.classList.remove('is-highlighted');
+        }, 1500);
+      }
+    });
+  });
+
+  // --- 4. FAQ Accordion ---
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.faq-question-btn');
+    const answer = item.querySelector('.faq-answer');
+
+    if (questionBtn && answer) {
+      questionBtn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+
+        // Close other FAQ items for clean accordion UX
+        faqItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+            const otherBtn = otherItem.querySelector('.faq-question-btn');
+            const otherAnswer = otherItem.querySelector('.faq-answer');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+            if (otherAnswer) otherAnswer.style.maxHeight = null;
+          }
+        });
+
+        // Toggle current item
+        if (isOpen) {
+          item.classList.remove('active');
+          questionBtn.setAttribute('aria-expanded', 'false');
+          answer.style.maxHeight = null;
+        } else {
+          item.classList.add('active');
+          questionBtn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    }
+  });
+
+  // --- 5. Project Lightbox Modal ---
+  const projectCards = document.querySelectorAll('.project-card');
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  if (lightboxModal && lightboxImg) {
+    projectCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const img = card.querySelector('.project-img');
+        const title = card.querySelector('.project-title')?.textContent || 'Project View';
+        const category = card.querySelector('.project-category')?.textContent || '';
+
+        if (img) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt || title;
+          if (lightboxCaption) {
+            lightboxCaption.textContent = category ? `${category} â€” ${title}` : title;
+          }
+          lightboxModal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    const closeLightbox = () => {
+      lightboxModal.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        closeLightbox();
+      }
+    });
+  }
+
+  // --- 6. Contact Form Validation & Submission Feedback ---
+  const contactForm = document.getElementById('contact-form');
+  const formStatusAlert = document.getElementById('form-status-alert');
+
+  if (contactForm) {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    // Email regex validation
+    const isValidEmail = (email) => {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+
+    // Validation helper
+    const validateField = (input, isValid) => {
+      if (!isValid) {
+        input.classList.add('is-invalid');
+        return false;
+      } else {
+        input.classList.remove('is-invalid');
+        return true;
+      }
+    };
+
+    // Live validation on blur
+    nameInput.addEventListener('blur', () => {
+      validateField(nameInput, nameInput.value.trim().length >= 2);
+    });
+
+    emailInput.addEventListener('blur', () => {
+      validateField(emailInput, isValidEmail(emailInput.value.trim()));
+    });
+
+    messageInput.addEventListener('blur', () => {
+      validateField(messageInput, messageInput.value.trim().length >= 10);
+    });
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const isNameValid = validateField(nameInput, nameInput.value.trim().length >= 2);
+      const isEmailValid = validateField(emailInput, isValidEmail(emailInput.value.trim()));
+      const isMessageValid = validateField(messageInput, messageInput.value.trim().length >= 10);
+
+      if (!isNameValid || !isEmailValid || !isMessageValid) {
+        if (formStatusAlert) {
+          formStatusAlert.className = 'form-status-alert is-error';
+          formStatusAlert.innerHTML = '<strong>Please check your details:</strong> Please fill in all required fields correctly.';
+          formStatusAlert.style.display = 'block';
+        }
+        return;
+      }
+
+      // Submit feedback simulation with realistic client confirmation
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Processing...';
+
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+
+        if (formStatusAlert) {
+          formStatusAlert.className = 'form-status-alert is-success';
+          formStatusAlert.innerHTML = `
+            <strong>Thank you, ${nameInput.value.trim()}!</strong><br>
+            Your inquiry regarding <em>${serviceSelect?.value || 'Garden Project'}</em> has been prepared. We will contact you personally as soon as possible.<br>
+            <small style="display:inline-block; margin-top:6px; color:#2e7d32;">(For urgent requests, reach us directly by phone at <a href="tel:+436649605052" style="text-decoration:underline; font-weight:600; color:inherit;">+43 664 9605052</a>.)</small>
+          `;
+          formStatusAlert.style.display = 'block';
+        }
+
+        contactForm.reset();
+      }, 700);
+    });
+  }
+
+  // --- 7. Legal Modals (Legal Notice & Privacy Policy) ---
+  const legalTriggers = document.querySelectorAll('[data-modal-target]');
+  const legalModals = document.querySelectorAll('.modal-overlay');
+  const modalCloseBtns = document.querySelectorAll('.modal-close-btn');
+
+  legalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = trigger.getAttribute('data-modal-target');
+      const targetModal = document.getElementById(targetId);
+      if (targetModal) {
+        targetModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  const closeModal = (modal) => {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  modalCloseBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const modal = btn.closest('.modal-overlay');
+      if (modal) closeModal(modal);
+    });
+  });
+
+  legalModals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal(modal);
+      }
+    });
+  });
+
+  // Global escape key listener for all modals
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (lightboxModal && lightboxModal.classList.contains('open')) {
+        lightboxModal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+      legalModals.forEach(modal => {
+        if (modal.classList.contains('open')) {
+          closeModal(modal);
+        }
+      });
+      if (mobileNav && mobileNav.classList.contains('open')) {
+        closeMobileNav();
+      }
+    }
+  });
+});
+
+</script>
+</body>
+</html>
+
